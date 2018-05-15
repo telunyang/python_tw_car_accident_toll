@@ -4,6 +4,9 @@
 ## 內政資料開放平臺
 [按我開啟網頁](https://data.moi.gov.tw/)
 
+## 安裝套件
+jsonlite, curl, ggplot2
+
 ## 範例圖片
 ![範例圖片](https://github.com/telunyang/TaiwanGovDrunkenCarAccidentToll/blob/master/plot.png)
 
@@ -24,8 +27,6 @@ df <- fromJSON(url_json)
 # 去除標題列
 df <- df$result$records
 df <- df[-1,]
-
-df
 
 # 將人數從 json 的文字格式，轉成數值，才不會在作 fit regression 的時候出錯
 df$dead <- as.numeric(df$dead)
