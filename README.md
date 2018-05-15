@@ -5,7 +5,9 @@
 [按我開啟網頁](https://data.moi.gov.tw/)
 
 ## 安裝套件
-jsonlite, curl, ggplot2
+install.packages("jsonlite"), 
+install.packages("curl"), 
+install.packages("ggplot2")
 
 ## 範例圖片
 ![範例圖片](https://github.com/telunyang/TaiwanGovDrunkenCarAccidentToll/blob/master/plot.png)
