@@ -1,14 +1,15 @@
 ﻿# TaiwanGovDrunkenCarAccidentToll
-內政部開放資料 -- 酒駕傷亡人數統計表
+內政部開放資料 -- 歷年酒駕肇事受傷及死亡件數、人數統計表
 
 ## 內政資料開放平臺
 [按我開啟網頁](https://data.moi.gov.tw/)
 
+## API 來源網址
+[按我開啟網頁](https://data.gov.tw/dataset/9018)
+
 ## 安裝套件
 install.packages("jsonlite")
-
 install.packages("curl")
-
 install.packages("ggplot2")
 
 
@@ -57,7 +58,7 @@ chart <- chart + geom_point()
 chart <- chart + geom_text(hjust = 0, nudge_x = 0.05)
 chart <- chart + geom_abline(intercept = intc, slope = slp, linetype = "dashed", color = "red", size = 1)
 chart <- chart + geom_smooth(method = "lm", se = FALSE)
-chart <- chart + ggtitle("內政部開放資料【歷年酒駕肇事交通事故統計表】")
+chart <- chart + ggtitle("內政部開放資料【歷年酒駕肇事受傷及死亡件數、人數統計表】")
 chart <- chart + labs(x = "年份", y = "死亡人數")
 chart <- chart + theme(text = element_text(family = ""), 
                        axis.text.x = element_text(size = 10, angle = 0), 
