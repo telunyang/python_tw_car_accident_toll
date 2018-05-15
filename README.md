@@ -6,8 +6,11 @@
 
 ## 安裝套件
 install.packages("jsonlite"), 
+
 install.packages("curl"), 
+
 install.packages("ggplot2")
+
 
 ## 範例圖片
 ![範例圖片](https://github.com/telunyang/TaiwanGovDrunkenCarAccidentToll/blob/master/plot.png)
