@@ -44,16 +44,27 @@
 >
 ># 製作圖表
 >chart <- ggplot(data = df, aes(x = df$year, y = df$dead, label = df$dead))
+>
 >chart <- chart + geom_point()
+>
 >chart <- chart + geom_text(hjust = 0, nudge_x = 0.05)
+>
 >chart <- chart + geom_abline(intercept = intc, slope = slp, linetype = "dashed", color = "red", size = 1)
+>
 >chart <- chart + geom_smooth(method = "lm", se = FALSE)
+>
 >chart <- chart + ggtitle("內政部開放資料【歷年酒駕肇事交通事故統計表】")
+>
 >chart <- chart + labs(x = "年份", y = "死亡人數")
+>
 >chart <- chart + theme(text = element_text(family = ""), 
+>
 >                       axis.text.x = element_text(size = 10, angle = 0), 
+>
 >                       axis.text.y = element_text(size = 10, angle = 0), 
+>
 >                       axis.title = element_text(size = 16))
+>
 >
 ># 儲存圖片
 >ggsave("plot.png", width = 7, height = 7)
