@@ -15,7 +15,7 @@ df <- fromJSON(url_json)
 df <- df$result$records
 df <- df[-1,]
 
-df$`A1-count`
+df
 
 # 列數
 x_vector <- c(1:nrow(df))
