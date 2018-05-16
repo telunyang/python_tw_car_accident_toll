@@ -1,11 +1,14 @@
 # TaiwanGovDrunkenCarAccidentToll
 內政部開放資料 [歷年酒駕肇事受傷及死亡件數、人數統計表]
 
+
 ## 內政資料開放平臺
 [按我開啟網頁](https://data.moi.gov.tw/)
 
+
 ## API 來源網址
 [按我開啟網頁](https://data.gov.tw/dataset/9018)
+
 
 ## 安裝套件
 install.packages("jsonlite")
@@ -17,13 +20,16 @@ install.packages("ggplot2")
 install.packages("ggpubr")
 
 
+
 ## 範例圖片
 ![範例圖片](https://github.com/telunyang/TaiwanGovDrunkenCarAccidentToll/blob/master/plot.png)
+
 
 ## 說明
 A1類：造成人員當場或24小時內死亡之交通事故。
 
 A2類：造成人員受傷或超過24時死亡之交通事故。
+
 
 ## 資料來源
 ```
@@ -153,6 +159,7 @@ A2類：造成人員受傷或超過24時死亡之交通事故。
 }
 ```
 
+
 ## 資料集合
 ```
 > df
@@ -169,6 +176,7 @@ A2類：造成人員受傷或超過24時死亡之交通事故。
 10  105年       95     5600      102         54       6939
 11  106年       85     4954       87         58       6102
 ```
+
 
 ## 基礎程式碼
 ```
