@@ -3,6 +3,8 @@ library(jsonlite)
 
 # 匯入圖形套件
 library(ggplot2)
+
+# 圖表排版
 library(ggpubr)
  
 # json 來源網址，來自內政部
@@ -169,7 +171,7 @@ chart_dead <- chart_dead + theme(text = element_text(family = ""),
                                  axis.title = element_text(size = 16))
 
 
-
+# 圖表排列
 ggarrange(chart_A1_count, chart_A2_count, chart_A1_hurt, chart_A2_hurt, chart_dead, ncol = 2, nrow = 3)
 
 # 儲存圖片

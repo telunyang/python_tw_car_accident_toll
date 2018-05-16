@@ -14,6 +14,8 @@ install.packages("curl")
 
 install.packages("ggplot2")
 
+install.packages("ggpubr")
+
 
 ## 範例圖片
 ![範例圖片](https://github.com/telunyang/TaiwanGovDrunkenCarAccidentToll/blob/master/plot.png)
@@ -168,7 +170,7 @@ A2類：造成人員受傷或超過24時死亡之交通事故。
 11  106年       85     4954       87         58       6102
 ```
 
-## 原始碼
+## 基礎程式碼
 ```
 # 匯入 json 的套件
 library(jsonlite)
