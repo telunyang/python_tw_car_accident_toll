@@ -18,6 +18,11 @@ install.packages("ggplot2")
 ## 範例圖片
 ![範例圖片](https://github.com/telunyang/TaiwanGovDrunkenCarAccidentToll/blob/master/plot.png)
 
+## 說明
+A1類：造成人員當場或24小時內死亡之交通事故。
+
+A2類：造成人員受傷或超過24時死亡之交通事故。
+
 ## 資料來源
 ```
 {
